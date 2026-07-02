@@ -31,22 +31,47 @@ export const services = [
 
 export const portfolio = [
   {
-    title: "Wizytówki premium",
+    title: "Raspberry Candle — sklep i oprawa marki",
     description:
-      "Elegancki projekt wizytówki dla marki usługowej, nastawiony na czytelność, klasę i pierwsze wrażenie.",
-    type: "cards",
+      "Oprawa graficzna i komunikacja sklepu z naturalnymi świecami sojowymi. Projekt obejmuje kierunek wizualny marki, grafiki promocyjne, prezentację produktów i spójny klimat kobiecej marki handmade.",
+    type: "candle",
+    tags: ["e-commerce", "grafiki", "marka produktowa"],
+    link: "https://www.raspberrycandle.pl/",
+  },
+  {
+    title: "Banery promocyjne",
+    description:
+      "Grafiki sprzedażowe do sklepu, promocji i komunikatów sezonowych — zaprojektowane tak, żeby były czytelne, estetyczne i od razu prowadziły uwagę klienta.",
+    type: "banners",
+    tags: ["banery", "promocje", "sprzedaż"],
   },
   {
     title: "Grafiki do social media",
     description:
-      "Spójny zestaw grafik promocyjnych do komunikacji marki w mediach społecznościowych.",
+      "Spójne grafiki do publikacji w mediach społecznościowych: posty, zapowiedzi, promocje, premiery produktów i materiały wzmacniające rozpoznawalność marki.",
     type: "social",
+    tags: ["Instagram", "Facebook", "kampanie"],
   },
   {
-    title: "Strona internetowa",
+    title: "Wizytówki premium",
     description:
-      "Minimalistyczna strona firmowa zaprojektowana tak, aby budować zaufanie i prowadzić użytkownika do kontaktu.",
+      "Elegancki projekt wizytówki dla marki usługowej, nastawiony na czytelność, klasę i pierwsze wrażenie przy kontakcie z klientem.",
+    type: "cards",
+    tags: ["wizytówki", "druk", "branding"],
+  },
+  {
+    title: "Materiały drukowane",
+    description:
+      "Vouchery, ulotki, cenniki i karty informacyjne przygotowane w estetycznym stylu oraz w formacie gotowym do druku lub przekazania klientowi.",
+    type: "print",
+    tags: ["vouchery", "ulotki", "cenniki"],
+  },
+  {
+    title: "Proste strony i landing page",
+    description:
+      "Czytelne strony dla małych firm i marek osobistych — z ofertą, zaufaniem, CTA i kontaktem ułożonym tak, żeby użytkownik szybko wiedział, co zrobić dalej.",
     type: "website",
+    tags: ["strony", "landing page", "UX"],
   },
 ];
 
