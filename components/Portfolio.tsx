@@ -1,12 +1,29 @@
 import SectionHeading from "@/components/SectionHeading";
 import { portfolio } from "@/data/site";
 
+function RaspberryMark() {
+  return (
+    <div className="raspberry-cluster scale-75" aria-hidden="true">
+      <i className="raspberry-stem" />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+    </div>
+  );
+}
+
 function PortfolioVisual({ type }: { type: string }) {
   if (type === "candle") {
     return (
       <div className="relative min-h-[16rem] overflow-hidden rounded-[1.4rem] bg-[#EFE7DA] p-5 text-[#171719]">
         <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-[#E8B7C8]" />
         <div className="absolute -left-12 bottom-0 h-40 w-40 rounded-full bg-[#C9A45C]/25" />
+        <div className="absolute right-3 top-3 z-10">
+          <RaspberryMark />
+        </div>
 
         <div className="relative rounded-[1.2rem] bg-[#F6EFE7] p-4 shadow-xl">
           <div className="mb-5 flex items-center justify-between">
@@ -16,7 +33,9 @@ function PortfolioVisual({ type }: { type: string }) {
                 sklep ze świecami sojowymi
               </p>
             </div>
-            <div className="h-10 w-10 rounded-full bg-[#B8325B]" />
+            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#171719] text-[#C9A45C]">
+              <span className="font-display text-xl">RC</span>
+            </div>
           </div>
 
           <div className="grid grid-cols-[0.9fr_1.1fr] gap-4">
@@ -64,9 +83,13 @@ function PortfolioVisual({ type }: { type: string }) {
     return (
       <div className="grid min-h-[16rem] gap-3 rounded-[1.4rem] bg-[#EFE7DA] p-4 text-[#171719]">
         <div className="rounded-2xl bg-[#171719] p-4 text-[#F6EFE7]">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#C9A45C]">
-            promocja
-          </p>
+          <div className="flex items-center justify-between gap-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#C9A45C]">
+              promocja
+            </p>
+            <span className="raspberry-seed" />
+          </div>
+
           <p className="mt-3 font-display text-3xl leading-tight">
             Nowa kolekcja świec
           </p>
@@ -81,7 +104,11 @@ function PortfolioVisual({ type }: { type: string }) {
             </p>
           </div>
           <div className="rounded-2xl bg-[#F6EFE7] p-4">
-            <div className="h-10 w-10 rounded-full bg-[#B8325B]" />
+            <div className="flex gap-1.5">
+              <span className="raspberry-seed" />
+              <span className="raspberry-seed opacity-80" />
+              <span className="raspberry-seed opacity-60" />
+            </div>
             <div className="mt-4 h-2 w-20 rounded bg-[#171719]/20" />
             <div className="mt-2 h-2 w-14 rounded bg-[#171719]/15" />
           </div>
@@ -105,7 +132,12 @@ function PortfolioVisual({ type }: { type: string }) {
           </p>
         </div>
         <div className="rounded-2xl bg-[#F6EFE7] p-3">
-          <div className="h-12 w-12 rounded-full bg-[#B8325B]/70" />
+          <div className="flex flex-wrap gap-1.5">
+            <span className="raspberry-seed" />
+            <span className="raspberry-seed" />
+            <span className="raspberry-seed" />
+            <span className="raspberry-seed" />
+          </div>
           <div className="mt-8 h-2 w-14 rounded bg-[#171719]/20" />
           <div className="mt-2 h-2 w-10 rounded bg-[#171719]/15" />
         </div>
