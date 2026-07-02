@@ -13,12 +13,21 @@ export default function Hero() {
     >
       <div className="pointer-events-none absolute left-0 top-16 h-64 w-64 rounded-full bg-[#B8325B]/18 blur-3xl" />
       <div className="pointer-events-none absolute right-0 top-10 h-80 w-80 rounded-full bg-[#C9A45C]/10 blur-3xl" />
+      <div className="brand-grain pointer-events-none absolute inset-x-0 top-0 h-72 opacity-[0.12]" />
 
       <div className="container-page relative grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
         <div>
-          <p className="mb-4 inline-flex rounded-full border border-[#C9A45C]/25 bg-[#111114]/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#C9A45C] sm:mb-5">
-            Raspberry Design
-          </p>
+          <div className="mb-4 flex items-center gap-4 sm:mb-5">
+            <p className="inline-flex rounded-full border border-[#C9A45C]/25 bg-[#111114]/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#C9A45C]">
+              Raspberry Design
+            </p>
+
+            <div className="hidden items-center gap-1.5 sm:flex" aria-hidden="true">
+              <span className="brand-jewel" />
+              <span className="brand-jewel opacity-75" />
+              <span className="brand-jewel opacity-50" />
+            </div>
+          </div>
 
           <h1 className="font-display text-[2.65rem] leading-[0.96] text-[#F6EFE7] min-[390px]:text-[2.95rem] sm:text-6xl lg:text-7xl">
             Grafiki, wizytówki i strony internetowe,{" "}
@@ -36,7 +45,7 @@ export default function Hero() {
           <div className="mt-6 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:gap-4">
             <a
               href="#portfolio"
-              className="inline-flex items-center justify-center rounded-full bg-[#E8B7C8] px-7 py-4 text-sm font-semibold text-[#171719] shadow-[0_18px_55px_rgba(232,183,200,0.24)] transition hover:-translate-y-0.5 hover:bg-[#F0C8D2]"
+              className="inline-flex items-center justify-center rounded-full bg-[#E8B7C8] px-7 py-4 text-sm font-semibold text-[#171719] shadow-[0_18px_55px_rgba(232,183,200,0.24)] transition hover:-translate-y-0.5 hover:bg-[#F0C8D2] hover:shadow-[0_20px_60px_rgba(184,50,91,0.25)]"
             >
               Zobacz portfolio
               <span className="ml-3" aria-hidden="true">
@@ -55,7 +64,7 @@ export default function Hero() {
           <ul className="mt-6 grid gap-3 text-sm text-[#EFE7DA]/88 sm:mt-8 sm:grid-cols-2">
             {highlights.map((item) => (
               <li key={item} className="flex items-center gap-3">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#C9A45C]" />
+                <span className="brand-jewel" />
                 {item}
               </li>
             ))}
@@ -65,6 +74,12 @@ export default function Hero() {
         <div className="relative mx-auto w-full max-w-2xl">
           <div className="absolute -right-3 top-6 h-60 w-60 rounded-full border border-[#C9A45C]/20" />
           <div className="absolute -left-4 bottom-10 h-40 w-40 rounded-full border border-[#B8325B]/25" />
+
+          <div className="pointer-events-none absolute -right-4 -top-5 hidden opacity-80 sm:block">
+            <div className="brand-orbit">
+              <span className="brand-orbit-mark" />
+            </div>
+          </div>
 
           <div className="card-premium relative overflow-hidden rounded-[2rem] p-4 sm:p-7">
             <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[#E8B7C8]/15 blur-3xl" />
@@ -156,7 +171,11 @@ export default function Hero() {
                   estetyka, zaufanie i spójność
                 </p>
               </div>
-              <div className="h-14 w-14 rounded-full border border-[#C9A45C]/45 bg-[#B8325B]/25" />
+              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#C9A45C]/45 bg-[#050505]">
+                <span className="font-display text-xl italic text-[#C9A45C]">
+                  RD
+                </span>
+              </div>
             </div>
           </div>
         </div>
